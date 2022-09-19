@@ -1,11 +1,7 @@
 sources:
   honeybee:
     description: Images of honey bees, to be used as an example of SciVision.
-    origin: https://www.kaggle.com/datasets/jenny18/honey-bee-annotated-images
+    origin: The BeeImage dataset by Jenny Yang
     driver: intake_xarray.image.ImageSource
     args:
-      urlpath: ["zip://*.png::https://www.kaggle.com/datasets/jenny18/honey-bee-annotated-images/download?datasetVersionNumber=2"]
-      chunks: {}
-      storage_options: {'anon': True}
-      #coerce_shape: [1000,1000]
-      exif_tags: True
+      urlpath: ["zip://*.png::https://zenodo.org/record/7093276/files/honey_bees.zip?download=1"]
